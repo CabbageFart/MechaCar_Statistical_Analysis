@@ -14,15 +14,21 @@ We used 5 independent variables (vehicle_length, vehicle_weight, spoiler_angle, 
 
 ![image](https://user-images.githubusercontent.com/111661058/228638488-35ab3391-c367-45de-8a71-17d34eb6b7b2.png)<BR>
   *The vehicle length and ground clearance are extemely likely to provide non_random amount of variance to the mpg. The vehicle weight only has a normal likelihood to provide non_random amounts of variance.<BR>
+ <BR>
   *The slope of this linear model is not to be considered zero. As you can see in the above illustration the p-value of the model is 5.35e-11 (or 0.0000000000535). Which is indeed not zero.<BR>
+  <BR>
   *The model does predict mpg of the MechaCar protoypes effectively. The R-squared value of 0.7149 tells that approximately 71% of all mpg predictions can be determined with this model.
 
 
 ## Summary Statistics on Suspension Coils
-The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch.<BR>
-![image](https://user-images.githubusercontent.com/111661058/228638589-f5e54c60-4393-46da-a222-67bb408490b0.png)
+The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. <BR>
+ <BR>
+  According to the lot summary below the overall variance is well within the stipulated 100psi at only 62psi.<BR>
+![image](https://user-images.githubusercontent.com/111661058/228638589-f5e54c60-4393-46da-a222-67bb408490b0.png)<BR>
+ But once we summarize each individual lot we find that every lot is not the same.
 
-![image](https://user-images.githubusercontent.com/111661058/228638543-82a1a43c-f0d0-49cd-bc5f-2b5dce4361bf.png)
+![image](https://user-images.githubusercontent.com/111661058/228638543-82a1a43c-f0d0-49cd-bc5f-2b5dce4361bf.png)<BR>
+  Lots 1 and 2 are well under 100psi. While lot 3 is concerningly over 100psi. If lot 3 would need to be used then I would suggest finding if outliers were responsible for the inflated PSI. (no pun intended)
 
 
 
